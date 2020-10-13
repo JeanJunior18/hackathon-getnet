@@ -15,7 +15,7 @@ import TrilhaOrganizeFuturo from './Pages/Trilha/OrganizeFuturo';
 
 const Router: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
       <Route path="/" exact component={Dashboard} />
       <Route path="/consultoria" exact component={Consultoria} />
